@@ -28,6 +28,8 @@ function Restore-RecycleBin
     <#
     -UseWebLogin used for 2 factor Auth.  You can remove if you don't have MFA turned on
     Connect-PnPOnline -UseWebLogin -Url  $siteUrl
+    Connect-PnPOnline -Interactvie -Url $siteUrl 
+    -Interactive to 2 factor or multi factor authentication according to latest PnP Powershell
     #>
 
     $today = (Get-Date)
